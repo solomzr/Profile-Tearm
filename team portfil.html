@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming-Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("BNAj2vY51FNXplxk_");
+
+document
+.getElementById("contact-form")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_rtn6w1g",
+        "template_2qll2i5",
+        this
+    )
+    .then(function () {
+
+        alert("Request sent successfully!");
+
+        document
+        .getElementById("contact-form")
+        .reset();
+
+    })
+    .catch(function(error){
+
+        alert("Failed to send request");
+
+        console.log(error);
+
+    });
+
+});
+</script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class = "Logo"> Programming-Team </div>
+
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#aboute">aboute</a></li>
+                <li><a href="#Serv">Serv</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <!--Skils-->
+                <!--Footer-->
+            </ul>
+        </nav>
+    </header>
+    <!--home-->
+    <section id="Home">
+        <div class="Logooo">
+           <h1>Team</h1> 
+           <img src="Logo-Team.jpeg" alt="Logo-Team">
+        </div>
+            
+            <p>We build websites, bots and modern digital solutions.</p>
+           <nav><a href="#our-team"><button class="button-work">ْView our work</button></a></nav> 
+    </section>
+
+<!--aboute-->
+<section id="aboute">
+    <h2>Aboute us</h2>
+    <p class="us">We are a passionate team of developers and designers dedicated to bringing your digital ideas to life.
+        We specialize in building fast,modern,and fully responsive website and applications tailored to your business needs.
+        Our goal is to deliver high-quality digital solutions that help your brand grow and stand  out in the market. 
+    </p>
+</section>
+
+<!--serv-->
+<section id="Serv">
+    <h2>Our Services</h2>
+    <div>
+       <h3>Web Development</h3>
+       <p>Building fast,secure,and modern websites tailored to your business needs.</p>
+    </div>
+    <div>
+       <h3>UI|UX Design</h3>
+       <p>Designing attractive and user-friendly interfaces to ensure the best experience.</p>
+    </div>
+    <div>
+       <h3>Maintenance & support</h3>
+       <p>Providing continuous updates and technical support to keep your project running perfectly.</p>           
+    </div>
+    <div>
+       <h3>Website Redesign & optimization</h3>
+       <p>We can upgrade your existing website, fix bugs, add new features, and improve its overall performance.</p>
+    </div>          
+</section>
+
+<!--Team-->
+<section id="Team">
+<section id="our-team">
+    <h2>Our team</h2>
+
+    <div class="member-1">
+        <img src="" alt="Abd El-rahman">
+        <h3>Abd El-rahman</h3>
+        <p class="تخصص-عبد-الرحمن">Angular Developer</p>
+        <p class="bio-1">Highly skilled Angular Developer with over 3 years of experience in crafting responsive web applications. Expert in TypeScript, state management, and building seamless user interfaces.</p>
+
+        <h4>Skills</h4>
+        <ul>
+            <li>Angular & TypeScript</li>
+            <li>RxJS & NgRx (State Management)</li>
+            <li>RESTful API Integration</li>
+            <li>Node.js & Express.js</li>
+        </ul>
+
+        <h4>Featured project</h4>
+        <div class="project-1">
+            <a href="" target="_blank">
+                <img src="" alt="Project preview">
+            </a>
+            <h5>LMS School Management System</h5>
+            <p>منصة برمجية متكاملة لإدارة المدارس والعمليات التعليمية، تم بناؤها باستخدام Angular و Node.js لتوفير تجربة سريعة ومتجاوبة.</p>
+        </div>
+    </div>
+
+    <div class="member-1">
+        <img src="" alt="Kareem">
+        <h3>Kareem</h3>
+        <p class="تخصص-كريم">Backend Developer</p>
+        <p class="bio-1">A dedicated .NET Backend Developer expert in building secure, scalable systems using ASP.NET Core and C#. Passionate about clean architecture, database design, and solving complex web vulnerabilities.</p>
+
+        <h4>Skills</h4>
+        <ul>
+            <li>C# & ASP.NET Core</li>
+            <li>Clean Architecture & Design Patterns</li>
+            <li>Database Systems (SQL & NoSQL)</li>
+            <li>Web Application Security & CyberSecurity Basics</li>
+        </ul>
+
+        <h4>Featured project</h4>
+        <div class="project-1">
+            <a href="" target="_blank">
+                <img src="" alt="Project preview">
+            </a>
+            <h5>Raboua Al-Jabal Visa Booking System</h5>
+            <p>نظام متقدم لحجز التأشيرات، يضم لوحة تحكم ذكية لإدارة المعاملات، ونظام محفظة مالية رقمية مؤمن بالكامل باستخدام ASP.NET Core.</p>
+        </div>
+    </div>
+    
+    <div class="member-1">
+        <img src="Islam.jpeg" alt="Islam">
+        <h3>Islam</h3>
+        <p class="تخصص-اسلام">Full-Stack Web Developer</p>
+        <p class="bio-1">An exceptional Full-Stack Developer specializing in PHP, Laravel, and modern JavaScript frameworks. Ranked 1st in his engineering department with a proven track record in building advanced e-commerce platforms.</p>
+
+        <h4>Skills</h4>
+        <ul>
+            <li>PHP & Laravel Framework</li>
+            <li>HTML5, CSS3, ES6+</li>
+            <li>Database Design (MySQL & Eloquent ORM)</li>
+            <li>Software Architecture & MVC</li>
+        </ul>
+
+        <h4>Featured project</h4>
+        <div class="project-1">
+            <a href="https://university-system.simastec.com/register" target="_blank">
+                <img src="Islam-project.png" alt="Project preview">
+            </a>
+            <h5>GIFT STORE E-Commerce Platform</h5>
+            <p>متجر إلكتروني متكامل وحائز على تقييم "امتياز" كمشروع تخرج، يدعم إدارة المنتجات، الحسابات، والدفع الإلكتروني بشكل آمن.</p>
+        </div>
+    </div>
+    
+<!--    <div class="member-1">
+        <img src="" alt="Abd El-rahman">
+        <h3>Abd El-rahman</h3>
+        <p class="تخصص-عبد-الرحمن"></p>
+        <p class="bio-1">...</p>
+
+        <h4>Skills</h4>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <h4>Featured project</h4>
+        <div class="project-1">
+            <a href="" target="_blank">
+                <img src="" alt="Project preview">
+            </a>
+            <h5><!--اسم المشروع--></h5>
+            <p><!--وصف للمشروع--></p>
+        </div>
+    </div>    
+<!--المشاريع-->
+<!--<section id="projects">
+
+    <h2>Our Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <a href="رابط_المشروع" target="_blank">
+                <img src="images/project1.jpg" alt="Project">
+            </a>
+
+            <h3>WhatsApp Bot</h3>
+
+            <p>
+                Advanced WhatsApp bot with multiple features.
+            </p>
+        </div>
+
+        <-- باقي المشاريع ->
+        منتظريين اول مشروع 
+    </div>-->
+</section> 
+</section>  
+
+<!-- Contact Form -->
+
+<section id="contact">
+
+    <h2>Start Your Project With Us</h2>
+
+    <p class="contact-text">
+        Interested in working with us? Leave your details and we'll contact you soon.
+    </p>
+
+    <form class="contact-form" id="contact-form">
+
+        <input
+            type="text"
+            name="client_name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="client_email"
+            placeholder="Your Email"
+            required
+        >
+
+        <input
+            type="text"
+            name="project_name"
+            placeholder="Your Project"
+            required
+        >
+
+        <button type="submit">Send Request</button>
+
+    </form>
+
+</section>
+
+
+<footer>
+    <div class="footer-socials">
+        <a href="" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        
+        <a href="https://wa.me/201070801393" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        
+        <a href="" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div> 
+    
+    <h3>Zoro Team</h3>
+
+    <p>
+        Building modern websites and digital solutions.
+    </p>
+
+    <p>
+        © 2026 All Rights Reserved <!--العلامه ديت ايه لازمتها-->
+    </p>
+
+</footer> 
+</body>
