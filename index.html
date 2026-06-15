@@ -11,39 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-emailjs.init("BNAj2vY51FNXplxk_");
 
-document
-.getElementById("contact-form")
-.addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-    emailjs.sendForm(
-        "service_rtn6w1g",
-        "template_2qll2i5",
-        this
-    )
-    .then(function () {
-
-        alert("Request sent successfully!");
-
-        document
-        .getElementById("contact-form")
-        .reset();
-
-    })
-    .catch(function(error){
-
-        alert("Failed to send request");
-
-        console.log(error);
-
-    });
-
-});
-</script>
 </head>
 <body>
     <!--Header-->
@@ -294,4 +262,39 @@ document
     </p>
 
 </footer> 
+
+<script>
+emailjs.init("BNAj2vY51FNXplxk_");
+
+document
+.getElementById("contact-form")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_rtn6w1g",
+        "template_2qll2i5",
+        this
+    )
+    .then(function () {
+
+        alert("Request sent successfully!");
+
+        document
+        .getElementById("contact-form")
+        .reset();
+
+    })
+    .catch(function(error){
+
+        alert("Failed to send request");
+
+        console.log(error);
+
+    });
+
+});
+</script>
+
 </body>
